@@ -1,0 +1,11 @@
+extends layout
+ 
+block body
+	.container
+		form.form-signin.login_form(action="/fidan/login", method="post")
+			h2.form-signin-heading Please Log In
+			input.input-block-level.login_input(type="text", name="username", placeholder="Email address")
+			input.input-block-level.login_input(type="password", name="password", placeholder="Password")
+			label.checkbox.
+				<input type="checkbox" value="remember-me" /> Remember me
+			button.btn.btn-large.btn-primary(type="submit") Log In

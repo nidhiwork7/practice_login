@@ -1,0 +1,9 @@
+extends layout
+ 
+block body
+	.container
+		form.form-signin(action="/fidan/signup", method="post")
+			h2.form-signin-heading Please sign up
+			input.input-block-level(type="text", name="username", placeholder="Email address")
+			input.input-block-level(type="password", name="password", placeholder="Password")
+			button.btn.btn-large.btn-primary(type="submit") Sign in
